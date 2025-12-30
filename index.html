@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Untuk Kamu ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LOGIN -->
+    <div id="loginBox">
+      <h2>💌 Masukkin Password nya Ya</h2>
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Masuk Ya</button>
+      <p id="loginError"></p>
+    </div>
+
+    <!-- KONTEN -->
+    <div id="content">
+      <header>
+        <h1>For You ❤️</h1>
+        <p>Website kecil yang aku buat khusus untuk kamu Sher ❤️</p>
+      </header>
+
+      <section class="music">
+        <h2>🎵 Song For You</h2>
+        <div class="gallery">
+          <img src="Ed Sheeran.jpg" alt="Ed" />
+        </div>
+        <br />
+        <audio controls autoplay loop>
+          <source src="perfect.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+
+      <section>
+        <h2>📸 Your Photos</h2>
+        <div class="gallery">
+          <img src="foto 1.jpeg" />
+          <img src="foto 2.jpeg" />
+          <img src="foto 3.jpeg" />
+        </div>
+      </section>
+
+      <section>
+        <h2>💖 Pesan Untukmu</h2>
+        <div class="memory">
+          <p id="surpriseText"></p>
+        </div>
+      </section>
+
+      <button onclick="showLove()">Click here ❤️</button>
+      <p id="loveText"></p>
+
+      <footer>
+        <p>I LOVE YOU ❤️</p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

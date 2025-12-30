@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  text-align: center;
+  overflow: auto;
+}
+
+/* LOGIN */
+#loginBox {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#loginBox input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  text-align: center;
+}
+
+#loginBox button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4d6d;
+  cursor: pointer;
+}
+
+/* KONTEN */
+#content {
+  display: none;
+}
+
+header {
+  padding: 60px 20px;
+  color: white;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e63950;
+}
+
+/* SURPRISE */
+.memory {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* HATI JATUH */
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
